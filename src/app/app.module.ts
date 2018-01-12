@@ -1,17 +1,25 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms'; // this is tu use ngModule
 
 import { routes } from './app.router';
 import { AppComponent }  from './app.component';
 import { AboutComponent } from './components/about/about.component'; 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ContactUsComponent } from './components/contactUs/contactUs.component';
+import { SearchComponent } from './components/search/search.component';
 
 
 @NgModule({
-  imports:      [ BrowserModule, routes ],
-  declarations: [ AppComponent, NavbarComponent, AboutComponent, ContactUsComponent ],
+  imports:      [ BrowserModule, routes, FormsModule ],
+  declarations: [ 
+                  AppComponent, 
+                  NavbarComponent, 
+                  AboutComponent, 
+                  ContactUsComponent, 
+                  SearchComponent 
+                ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
