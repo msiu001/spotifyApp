@@ -11,6 +11,7 @@ import { AboutComponent } from './components/about/about.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ContactUsComponent } from './components/contactUs/contactUs.component';
 import { SearchComponent } from './components/search/search.component';
+import { ArtistComponent } from './components/artist/artist.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { SearchComponent } from './components/search/search.component';
                   NavbarComponent, 
                   AboutComponent, 
                   ContactUsComponent, 
-                  SearchComponent 
+                  SearchComponent ,
+                  ArtistComponent
                 ],
   bootstrap:    [ AppComponent ]
 })

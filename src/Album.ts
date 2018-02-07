@@ -1,7 +1,7 @@
-import { Track } from './Track';
+//import { Track } from './Track';
 
 export class Album{
     id: number;
     name: string;
-    tracks: Track[];
+   // tracks: Track[];
 }

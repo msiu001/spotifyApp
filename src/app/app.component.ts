@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
-//import { Http, Response }  from '@angular/http';
+import { SpotifyService } from './services/spotify.service';
+
 
 @Component({
   selector: 'my-app',
-  template: `<navbar></navbar>`
+  template: `<navbar></navbar>`,
+  providers: [SpotifyService]
 })
 export class AppComponent  { name = 'Angular'; }
