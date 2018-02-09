@@ -12,6 +12,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ContactUsComponent } from './components/contactUs/contactUs.component';
 import { SearchComponent } from './components/search/search.component';
 import { ArtistComponent } from './components/artist/artist.component';
+import { AlbumComponent } from './components/album/album.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ArtistComponent } from './components/artist/artist.component';
                   AboutComponent, 
                   ContactUsComponent, 
                   SearchComponent ,
-                  ArtistComponent
+                  ArtistComponent,
+                  AlbumComponent
                 ],
   bootstrap:    [ AppComponent ]
 })

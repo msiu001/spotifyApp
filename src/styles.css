@@ -11,6 +11,12 @@
   border-bottom: solid 3px #333;
 }
 
+.album-header{
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid 3px #333;
+}
+
 
 .artist-thumb{
   width: 150px;

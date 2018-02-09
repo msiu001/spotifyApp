@@ -1,3 +1,4 @@
+
 <div *ngIf="artist">
     <header class="artist-header">
         <div *ngIf="artist.images.length > 0">
@@ -16,6 +17,7 @@
         <p *ngIf="artist.followers.total > 0">
             Followers: {{artist.followers.total}}
         </p>
+      
     </header>
  
     <div class="artist-albums" align="center">        
@@ -26,7 +28,7 @@
                         <div *ngIf="album.images.length > 0">
                             <img class="album-thumb img-thumbnail" src="{{album.images[0].url}}">
                             <h6>{{album.name}}</h6>
-                            <a href="#"  class="btn btn-light btn-block" role="button" >Album Details</a>
+                            <a routerLink="/album/{{album.id}}"  class="btn btn-light btn-block" role="button" >Album Details</a>
                         </div>
                     </div>
                 </div>

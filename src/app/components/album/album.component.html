@@ -1,0 +1,33 @@
+<div id="album" *ngIf="album">
+    <header class="album-header">
+        <div class="row">
+            <div class="col-md-4">
+                <div *ngIf="album.images.length > 0">
+                        <img  class="album-thumb" src="{{album.images[0].url}}">
+                </div>     
+            </div>
+            <div class="col-md-8">
+                <h3>{{album.name}}</h3>
+                <h5 *ngIf="album.artists.length > 0">
+                    <span *ngFor="let artist of album.artists">
+                        {{artist.name}}
+                    </span>
+                </h5>
+                <p *ngIf="album.release_date">Release date:  {{album.release_date}}</p>
+                <p *ngIf="album.copyrights.text">
+                    {{album.copyrights.text}}
+                </p>              
+            </div>
+        </div>
+    </header> 
+
+    <div class="album-tracks">
+        <h4>Album Tracks:</h4>        
+        <div *ngFor="let track of album.tracks.items">
+            <div class="card text-white bg-dark mb-3">
+                <p>{{track.track_number}} -- {{track.name}}<p>
+                <a href="{{track.preview_url}}" target="_blank">Preview Track</a>
+            </div>
+        </div>
+    </div>
+</div>
