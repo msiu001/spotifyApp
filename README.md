@@ -1,1 +1,1 @@
-This application is built in Angular 2.
+This application is built in Angular 4.
